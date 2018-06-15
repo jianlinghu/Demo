@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 import ThreadQuickSort.CutList;
 import ThreadQuickSort.FileOperation;
 import ThreadQuickSort.MergeLists;
+import ThreadQuickSort.MostImportant;
 import ThreadQuickSort.MyCallable;
 import ThreadQuickSort.QuickSort;
 import java.io.BufferedReader;
@@ -162,5 +163,11 @@ public class OneTest {
     List<String> strings = ml.mergeNSort(lists2);
     System.out.println(strings.toArray());
 
+  }
+
+  @Test
+  public void test5(){
+    MostImportant most = new MostImportant();
+    most.ThreadQsort();
   }
 }
